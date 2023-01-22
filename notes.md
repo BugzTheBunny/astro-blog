@@ -114,6 +114,22 @@ const isRed = false;
     - Astro provider free starter project with themes on its [website](https://astro.build/themes/).
 
 - FONT + POSTCSS - [start this video from 8:15](https://youtu.be/KNtax5dHPfI?list=PLoqZcxvpWzzeRwF8TEpXHtO7KYY6cNJeF&t=495)
+
+- Astro Icons - https://github.com/natemoo-re/astro-icon#readme
 ## IMPORTANT NOTES:
 
 - If you have a problem with importing layouts, view [this](https://docs.astro.build/en/guides/typescript/)
+- You can still write vanilla JS which will run on the client, just put it down inside script tags (buttom of page) and it will be bundled.
+    ```
+    <footer>
+        <small>
+            Copyright &copy; <span id="copyright">
+            </span>
+            rights reserved
+        </small>
+    </footer>
+
+    <script>
+        document.querySelector("#copyright")!.textContent = new Date().getFullYear().toString();
+    </script>
+    ```
