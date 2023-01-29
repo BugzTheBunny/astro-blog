@@ -23,7 +23,9 @@ const {
 	<BaseHead title={title} description={description}/>
 	<body>
 		<Nav />
-		<slot></slot>
-	</body>
+		<main>
+			<slot>default</slot>
+		</main>
 	<Footer />
+	</body>
 </html>

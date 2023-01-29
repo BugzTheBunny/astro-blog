@@ -109,6 +109,10 @@ const isRed = false;
 ```
 
 ----
+## Routing
+1. Everything inside pages is a route.
+2. Nested routing
+----
 ## Cool stuff.
 - FREE THEMES
     - Astro provider free starter project with themes on its [website](https://astro.build/themes/).
